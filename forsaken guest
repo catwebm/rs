@@ -142,3 +142,10 @@ newtrack100.Looped = false
 
     end
 end)
+
+local Sprinting = game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting
+local m = require(Sprinting)
+m.MaxStamina = 100
+m.StaminaGain = 55
+m.StaminaLoss = 8
+m.SprintSpeed = 29
