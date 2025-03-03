@@ -294,6 +294,38 @@ newtrack12.Looped = false
     end
 end)
 
+local ogID = "71505511479171"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanim321 = Instance.new("Animation")
+        newanim321.AnimationId = "rbxassetid://106485518413331"
+        local newtrack321 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim321)
+newtrack321:Play()
+
+newtrack321:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtrack321:Stop()
+
+    end
+end) 
+
+local ogID = "138695523464886"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanim3211 = Instance.new("Animation")
+        newanim3211.AnimationId = "rbxassetid://93622022596108"
+        local newtrack3211 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim3211)
+newtrack3211:Play()
+
+newtrack3211:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtrack3211:Stop()
+
+    end
+end) 
+
 
 local Sprinting = game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting
 local m = require(Sprinting)
