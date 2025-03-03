@@ -239,7 +239,7 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
         local newtrack6000 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim6000)
 newtrack6000:Play()
 
-newtrack6000:AdjustSpeed(0.5)
+newtrack6000:AdjustSpeed(0.6)
 newtrack6000.Looped = false
  newtrack6000.TimePosition = 2.8
 
