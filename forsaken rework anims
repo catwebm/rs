@@ -326,6 +326,169 @@ newtrack3211:Stop()
     end
 end) 
 
+local ogID = "18885939653"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanim = Instance.new("Animation")
+        newanim.AnimationId = "rbxassetid://99024060905653"
+        local newtrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim)
+newtrack:Play()
+
+newtrack:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtrack:Stop()
+
+    end
+end) 
+
+
+local ogID = "18885932392"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim2 = Instance.new("Animation")
+        newanim2.AnimationId = "rbxassetid://105072694235242"
+        local newtrack2 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim2)
+newtrack2:Play()
+
+newtrack2:AdjustSpeed(1)
+newtrack2.Looped = false
+ newtrack2.TimePosition = 0
+
+    end
+end)
+
+
+local ogID = "96571077893813"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanimy = Instance.new("Animation")
+        newanimy.AnimationId = "rbxassetid://110988881968651"
+        local newtracky = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanimy)
+newtracky:Play()
+
+newtracky:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtracky:Stop()
+
+    end
+end) 
+
+local ogID = "96571077893813"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanimyy = Instance.new("Animation")
+        newanimyy.AnimationId = "rbxassetid://110988881968651"
+        local newtrackyy = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanimyy)
+newtrackyy:Play()
+
+newtrackyy:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtrackyy:Stop()
+
+    end
+end) 
+
+local ogID = "18885903667"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim2y = Instance.new("Animation")
+        newanim2y.AnimationId = "rbxassetid://91690853303054"
+        local newtrack2y = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim2y)
+newtrack2y:Play()
+
+newtrack2y:AdjustSpeed(1)
+newtrack2y.Looped = true
+ newtrack2y.TimePosition = 0
+
+    end
+end)
+
+
+local ogID = "18885906143"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:AdjustWeight(-999)
+        local newanimyyy = Instance.new("Animation")
+        newanimyyy.AnimationId = "rbxassetid://121689215419306"
+        local newtrackyyy = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanimyyy)
+newtrackyyy:Play()
+
+newtrackyyy:AdjustSpeed(1)
+AnimTrack.Stopped:Wait()
+newtrackyyy:Stop()
+
+    end
+end) 
+
+local ogID = "18885919947"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim23y = Instance.new("Animation")
+        newanim23y.AnimationId = "rbxassetid://86408662552940"
+        local newtrack23y = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim23y)
+newtrack23y:Play()
+
+newtrack23y:AdjustSpeed(1)
+newtrack23y.Looped = false
+ newtrack23y.TimePosition = 0
+
+    end
+end)
+
+local ogID = "18885915433"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim243y = Instance.new("Animation")
+        newanim243y.AnimationId = "rbxassetid://105313066250280"
+        local newtrack243y = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim243y)
+newtrack243y:Play()
+
+newtrack243y:AdjustSpeed(1)
+newtrack243y.Looped = false
+ newtrack243y.TimePosition = 0
+
+    end
+end)
+
+local ogID = "18885940850"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim243g = Instance.new("Animation")
+        newanim243g.AnimationId = "rbxassetid://131731612925891"
+        local newtrack243g = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim243g)
+newtrack243g:Play()
+
+newtrack243g:AdjustSpeed(1)
+newtrack243g.Looped = false
+ newtrack243g.TimePosition = 0
+
+    end
+end)
+
+local ogID = "18885909645"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim244g = Instance.new("Animation")
+        newanim244g.AnimationId = "rbxassetid://136057742842968"
+        local newtrack244g = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim244g)
+newtrack244g:Play()
+
+newtrack244g:AdjustSpeed(1)
+newtrack244g.Looped = false
+ newtrack244g.TimePosition = 0
+
+    end
+end)
+
 
 local Sprinting = game:GetService("ReplicatedStorage").Systems.Character.Game.Sprinting
 local m = require(Sprinting)
@@ -335,3 +498,5 @@ m.StaminaLoss = 8
 m.SprintSpeed = 29
 
 end)
+
+
