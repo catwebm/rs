@@ -123,7 +123,7 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
         local newtrack11 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim11)
 newtrack11:Play()
 
-newtrack11:AdjustSpeed(0.5)
+newtrack11:AdjustSpeed(1)
 newtrack11.Looped = false
  newtrack11.TimePosition = 0
 
