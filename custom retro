@@ -97,7 +97,9 @@ newtrack43.Looped = false
     end
 end)
 
-local ogID = "121781457295101"
+
+
+local ogID = "85393634259965"
 game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
     if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
         AnimTrack:Stop()
