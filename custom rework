@@ -171,14 +171,14 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
     if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
         AnimTrack:Stop()
         local newanim5000 = Instance.new("Animation")
-        newanim5000.AnimationId = "rbxassetid://83251433279852"
+        newanim5000.AnimationId = "rbxassetid://78254309368241"
         local newtrack5000 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim5000)
 newtrack5000:Play()
 
-newtrack5000:AdjustSpeed(0.8)
-newtrack5000.Looped = true
-repeat wait() until newtrack5000.TimePosition >= 1.6
-newtrack5000:Stop()
+newtrac50800:AdjustSpeed(1)
+newtrack5000.Looped = false
+ newtrack5000.TimePosition = 0
+
 
     end
 end)
