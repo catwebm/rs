@@ -191,7 +191,7 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
         local newtrack800 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim800)
 newtrack800:Play()
 
-newtrack800:AdjustSpeed(0.5)
+newtrack800:AdjustSpeed(1)
 newtrack800.Looped = false
  newtrack800.TimePosition = 0
 
