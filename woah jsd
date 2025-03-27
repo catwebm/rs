@@ -409,7 +409,7 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
     if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
         AnimTrack:AdjustWeight(-999)
         local newanim = Instance.new("Animation")
-        newanim.AnimationId = "rbxassetid://131840622546651"
+        newanim.AnimationId = "rbxassetid://105486865381259"
         local newtrack = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim)
 newtrack:Play()
 
