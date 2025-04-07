@@ -1,0 +1,125 @@
+local Players = game:GetService("Players")
+
+local ogID = "rbxassetid://136252471123500"
+local newID = "rbxassetid://75409814098993"
+
+local function onCharacterAdded(character)
+    wait(1)
+
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.AnimationPlayed:Connect(function(AnimTrack)
+            if AnimTrack.Animation and AnimTrack.Animation.AnimationId == ogID then
+                AnimTrack:AdjustWeight(-999)
+
+                local newAnim = Instance.new("Animation")
+                newAnim.AnimationId = newID
+
+                local newTrack = humanoid:LoadAnimation(newAnim)
+                newTrack:Play()
+                newTrack:AdjustSpeed(1)
+
+                AnimTrack.Stopped:Wait()
+                newTrack:Stop()
+            end
+        end)
+    end
+end
+
+local function onPlayerAdded(player)
+    player.CharacterAdded:Connect(onCharacterAdded)
+
+    if player.Character then
+        onCharacterAdded(player.Character)
+    end
+end
+
+for _, player in ipairs(Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+
+local Players = game:GetService("Players")
+
+local ogID = "rbxassetid://108018357044094"
+local newID = "rbxassetid://95213748170889"
+
+local function onCharacterAdded(character)
+    wait(1)
+
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.AnimationPlayed:Connect(function(AnimTrack)
+            if AnimTrack.Animation and AnimTrack.Animation.AnimationId == ogID then
+                AnimTrack:AdjustWeight(-999)
+
+                local newAnim = Instance.new("Animation")
+                newAnim.AnimationId = newID
+
+                local newTrack = humanoid:LoadAnimation(newAnim)
+                newTrack:Play()
+                newTrack:AdjustSpeed(1)
+
+                AnimTrack.Stopped:Wait()
+                newTrack:Stop()
+            end
+        end)
+    end
+end
+
+local function onPlayerAdded(player)
+    player.CharacterAdded:Connect(onCharacterAdded)
+
+    if player.Character then
+        onCharacterAdded(player.Character)
+    end
+end
+
+for _, player in ipairs(Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
+
+local Players = game:GetService("Players")
+
+local ogID = "rbxassetid://131082534135875"
+local newID = "rbxassetid://138465378316476"
+
+local function onCharacterAdded(character)
+    wait(1)
+
+    local humanoid = character:FindFirstChildOfClass("Humanoid")
+    if humanoid then
+        humanoid.AnimationPlayed:Connect(function(AnimTrack)
+            if AnimTrack.Animation and AnimTrack.Animation.AnimationId == ogID then
+                AnimTrack:AdjustWeight(-999)
+
+                local newAnim = Instance.new("Animation")
+                newAnim.AnimationId = newID
+
+                local newTrack = humanoid:LoadAnimation(newAnim)
+                newTrack:Play()
+                newTrack:AdjustSpeed(1)
+
+                AnimTrack.Stopped:Wait()
+                newTrack:Stop()
+            end
+        end)
+    end
+end
+
+local function onPlayerAdded(player)
+    player.CharacterAdded:Connect(onCharacterAdded)
+
+    if player.Character then
+        onCharacterAdded(player.Character)
+    end
+end
+
+for _, player in ipairs(Players:GetPlayers()) do
+    onPlayerAdded(player)
+end
+
+Players.PlayerAdded:Connect(onPlayerAdded)
