@@ -97,4 +97,20 @@ newtrack0.Looped = false
     end
 end)
 
+local ogID = "114155003741146"
+game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(AnimTrack)
+    if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
+        AnimTrack:Stop()
+        local newanim2 = Instance.new("Animation")
+        newanim2.AnimationId = "rbxassetid://116948805604616"
+        local newtrack2 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim2)
+newtrack2:Play()
+
+newtrack2:AdjustSpeed(2)
+newtrack2.Looped = false
+ newtrack2.TimePosition = 0
+
+    end
+end)
+
 end)
