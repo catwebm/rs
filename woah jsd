@@ -421,3 +421,50 @@ newtrack56:Stop()
 end)
 
 end)
+
+--ts
+function lerp(a,b,t) return a + (b - a) * t end
+local tween = game.TweenService
+
+function GetGitSoundID(GithubSnd,SoundName)
+    SoundName=tostring(SoundName)
+    local url=GithubSnd
+    SoundName=tostring(SoundName)
+    local url=GithubSnd
+    FileName = SoundName
+    writefile("customObject_Sound_"..FileName..".mp3", game:HttpGet(url))
+    return (getcustomasset or getsynasset)("customObject_Sound_"..FileName..".mp3")
+end
+
+function roundNumber(num, numDecimalPlaces)
+  return tonumber(string.format("%." .. (numDecimalPlaces or 0) .. "f", num))
+end
+
+function getsfxid(id)
+    local hi = nil
+    if id == "clang" then
+        hi = "rbxassetid://"..495135507
+    elseif id == "water" then
+        hi = GetGitSoundID("https://github.com/fartmaggot445/sounds/raw/refs/heads/main/thewater.mp3")
+    end
+    return tostring(hi)
+end
+print(getsfxid("pickup"))
+
+function sfx(id,p,d)
+    local SlashSound = Instance.new("Sound")
+    SlashSound.SoundId = id
+    SlashSound.Parent = p
+    SlashSound.Volume = .7
+    if d then
+        game.Debris:AddItem(SlashSound,15)
+    end
+    return SlashSound
+end
+
+----------------------------------------------------------------------------------
+game:GetService("StarterGui"):SetCore("SendNotification",{
+    Title = "Executed",
+    Text = "Hello.",
+    Icon = "rbxassetid://101961344554720"
+})
