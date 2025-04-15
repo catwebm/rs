@@ -54,7 +54,7 @@ game.Players.LocalPlayer.Character.Humanoid.AnimationPlayed:Connect(function(Ani
     if AnimTrack.Animation.AnimationId == "rbxassetid://"..ogID then
         AnimTrack:Stop()
         local newanim36 = Instance.new("Animation")
-        newanim36.AnimationId = "rbxassetid://90750159558178"
+        newanim36.AnimationId = "rbxassetid://126830014841198"
         local newtrack36 = game.Players.LocalPlayer.Character.Humanoid:LoadAnimation(newanim36)
 newtrack36:Play()
 
